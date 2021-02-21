@@ -1,19 +1,40 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on My New Hugo Site</title>
+    <title>Posts on Kevin Xu&#39;s blog</title>
     <link>https://chenxuw2000.github.io/post/</link>
-    <description>Recent content in Posts on My New Hugo Site</description>
+    <description>Recent content in Posts on Kevin Xu&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 19 Feb 2021 15:20:43 +0000</lastBuildDate><atom:link href="https://chenxuw2000.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 20 Feb 2021 19:11:06 +0000</lastBuildDate><atom:link href="https://chenxuw2000.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Blog</title>
+      <title>在Windows系统下的hugo配置/个人博客搭建</title>
+      <link>https://chenxuw2000.github.io/post/blog2/</link>
+      <pubDate>Sat, 20 Feb 2021 19:11:06 +0000</pubDate>
+      
+      <guid>https://chenxuw2000.github.io/post/blog2/</guid>
+      <description>Windows 下配置 hugo 建立个人blog 基于go语言 1.安装 从google github 下载zip file，解压在eg C：\Hugo\bin 添加hugo.exe的环境变量
+set%PATH%=PATH; C：//Hugo/bin/hugo.exe 使用windows+R+cmd 打开命令行，
+hugo help 2.建立blog folder 自定义名称
+hugo new site myblog 3.下载theme 可google hugo themes 下载自己喜欢的主题； 根据网页指导进行theme安装; eg.
+git clone xxxxx Notes:下载theme前一定要配置好git git init
+4.启动blog 在根目录中进行, eg. C：\myblog 本地启动命令:
+hugo server -t m10c --buildDrafts Ctrl+c 停止命令
+复制网址到浏览器内，跳转显示blog；
+修改blog内容，使用vscode打开eg. C:\myblog\content\post\blog.md ， 可修改title 和内容，修改完成后，再次使用启动命令，刷新网页即可。
+5.将blog部署到github远端仓库上 第一步,创建一个新的repository，名字一定要是你的昵称的小写全拼， eg. ChenXuW2000&amp;mdash;&amp;gt;chenxuw2000.github.io
+第二步，cmd操作，在根目录eg. C：\myblog 进行， 使用命令: eg.
+hugo --theme=m10c --baseUrl=&amp;quot;https://chenxuw2000.github.io/&amp;quot; --buildDrafts 此时会生成一个叫public的folder，切换到此folder，</description>
+    </item>
+    
+    <item>
+      <title>Markdown 自学分享</title>
       <link>https://chenxuw2000.github.io/post/blog/</link>
       <pubDate>Fri, 19 Feb 2021 15:20:43 +0000</pubDate>
       
       <guid>https://chenxuw2000.github.io/post/blog/</guid>
-      <description>hahaha</description>
+      <description>Makedown Learning Process  1.调整字体大小 Example: # hi ## hi ### hi 2.标题大小 Example: hi --- hi === 3.引用表现：&amp;gt; Example:  &amp;gt; Hello world！ &amp;gt; Becaue you are beautiful. 使用“&amp;gt;”记得加空格. 以防渲染器不同会有区别。
+4.增加分割线  1. --- 2. *** 3. ___ 4. - - - Example: --- ##### Hellow world! --- 5.强调表现  斜体： XXX， XXX 粗体： XXX, XXX  Example： *hellow world* **hellow world** __hellow world__ _hellow world_ 6.列表表示  列表符号： - 列表符号： * 列表符号： + (FIRST CHOICE) 列表符号： 数字  Example： 1.</description>
     </item>
     
   </channel>
